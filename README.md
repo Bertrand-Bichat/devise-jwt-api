@@ -1,24 +1,16 @@
-# README
+# Ruby backend with Devise + JWT to manage users via API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Create new user
+```bash
+curl -XPOST -H "Content-Type: application/json" -d '{ "user": { "email": "YOUR_EMAIL", "password": "YOUR_PASSWORD" } }' http://localhost:3000/signup
+```
 
-Things you may want to cover:
+## Login existing user
+```bash
+curl -XPOST -H "Content-Type: application/json" -d '{ "user": { "email": "YOUR_EMAIL", "password": "YOUR_PASSWORD" } }' http://localhost:3000/login
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Logout
+```bash
+curl -XDELETE -H "Content-Type: application/json" -d '{ "user": { "email": "YOUR_EMAIL", "password": "YOUR_PASSWORD" } }' http://localhost:3000/logout
+```
