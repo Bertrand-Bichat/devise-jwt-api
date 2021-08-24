@@ -27,5 +27,5 @@ curl -XPOST -H "Content-Type: application/json" -d '{ "user": { "email": "YOUR_E
 
 ## Logout
 ```bash
-curl -XDELETE -H "Content-Type: application/json" -d '{ "user": { "email": "YOUR_EMAIL", "password": "YOUR_PASSWORD" } }' http://localhost:3000/logout
+curl -XDELETE -H "Content-Type: application/json" -d '{ "user": { "email": "YOUR_EMAIL" } }' http://localhost:3000/logout
 ```
