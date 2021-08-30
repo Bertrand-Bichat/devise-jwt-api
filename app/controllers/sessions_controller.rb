@@ -8,6 +8,7 @@ class SessionsController < Devise::SessionsController
   end
 
   def respond_to_on_destroy
+    # render json: {message: "logout is OK !"}
     head :ok
   end
 end
